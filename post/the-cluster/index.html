@@ -6,7 +6,7 @@
     
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a datacenter available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know."/>
+<meta name="description" content="So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a data center available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know."/>
 <meta name="keywords" content="Cody Moss bluemossmedia technology kubernetes docker devops raspberry pi"/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="/post/the-cluster/" />
@@ -27,12 +27,12 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="The Cluster"/>
-<meta name="twitter:description" content="So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a datacenter available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know."/>
+<meta name="twitter:description" content="So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a data center available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know."/>
 
 
 
 <meta property="og:title" content="The Cluster" />
-<meta property="og:description" content="So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a datacenter available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know." />
+<meta property="og:description" content="So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a data center available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/the-cluster/" />
 <meta property="article:published_time" content="2019-09-25T21:20:36-07:00" />
@@ -133,15 +133,15 @@
     
 
     <div class="post-content">
-      <p>So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a datacenter available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know. Overkill probably. Worth the knowledge I gained most defintely. So take a moment grab a cup of coffee and join me on a journey of building my own personal cloud.</p>
+      <p>So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a data center available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know. Overkill probably. Worth the knowledge I gained most definitely. So take a moment grab a cup of coffee and join me on a journey of building my own personal cloud.</p>
 
-<p>Now to be clear. This is just a starting point. A cluster is most defintely not a &ldquo;cloud&rdquo; but it is what I consider a good first step. In the image above you see my desk. A mess I know. My wife reminds me of that every time she cleans my desk (Once every 6 months or so (of her own free will)). That is besides the point. The parts on the edge of the desk are the important bit. These are parts I picked out for a small home cluster. Now explaining to my CFO (my wife) why I needed all these parts was another task. I can not help you there. Although I think she got it. That or got tired of me asking. Here is the list for all those items:</p>
+<p>Now to be clear. This is just a starting point. A cluster is most definitely not a &ldquo;cloud&rdquo; but it is what I consider a good first step. In the image above you see my desk. A mess I know. My wife reminds me of that every time she cleans my desk (Once every 6 months or so (of her own free will)). That is besides the point. The parts on the edge of the desk are the important bit. These are parts I picked out for a small home cluster. Now explaining to my CFO (my wife) why I needed all these parts was another task. I can not help you there. Although I think she got it. That or got tired of me asking. Here is the list for all those items:</p>
 
 <ul>
 <li>5 raspberry pi modal 3 b+</li>
 <li>6 cat 6 network cables (one to connect the router to the switch)</li>
 <li>1 8 port switch</li>
-<li>1 usb power hub (the one in the pic did not work. I went with a 10 port anker power hub from amazon)</li>
+<li>1 usb power hub (the one in the pic did not work. I went with a 10 port Anker power hub from amazon)</li>
 <li>5 usb cables</li>
 <li>5 pi cases</li>
 <li>5 32gb micro sd cards</li>
@@ -158,7 +158,7 @@
 
 <p>There were some steps before that though that we just skipped over. Lets start from the beginning. So first things first I started opening all the goods. The cases, pis, cables, sd cards, switch, and power supply. Once I had all that open I had to set it all up. Well first I download Raspbian stretch lite off of the official raspberry pi foundation site. After that took about 20 or 30 minutes to flash every sd card. Really was mind numbing waiting for all them to flash, see if you can get the multi flash thing from the people that make etcher. That will make your life 1000% easier here. Also while flashing to get ssh enabled so you do not have to connect a monitor and keyboard to all the pis for the initial setup is just going into the boot partition of each sd card and creating a blank ssh file with no extension (heard windows likes to add them even though you do not see them). After that I connected the switch to my laptop and configured it to my subnet and gave it an ip outside of my dhcp range. You can avoid that if you buy a managed switch. Then it was just wiring it all up and turning on the pis. I used my router to see what ip they all got in the dhcp pool and just went through and updated each pi and gave them a static ip outside of the dhcp pool. After that I copied over my ssh key to make it so I can login without a password. Then I googled how to harden the pi setup and went through the first 5 or so articles and guides and followed what made sense (pretty much all of it). Such as making the pi user require a password for sudo or just removing that user once I made my own admin account. Then after that you just follow the K3s guide then you should be done at that point.</p>
 
-<p>Now I have this cluster. You are probably wondering what I run on it. Right now it is just host my DNS server. I use CoreDNS with the host plugin and the cache plugin to give all my machines domain names so I do not have to remember the ip addresses. I am aiming for everything to be dhcp as well. More on that later once I have figured it out. So all and all I am happy with it and I plan to try to put other things on the cluster in the future and if I see interest I will plan to write a post on software I deploy on it.</p>
+<p>Now I have this cluster. You are probably wondering what I run on it. Right now it is just hosting my DNS server. I use CoreDNS with the host plugin and the cache plugin to give all my machines domain names so I do not have to remember the ip addresses. I am aiming for everything to be dhcp as well. More on that later once I have figured it out. So all and all I am happy with it and I plan to try to put other things on the cluster in the future and if I see interest I will plan to write a post on software I deploy on it.</p>
 
     </div>
     
