@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blue Moss Media</title>
@@ -6,11 +6,21 @@
     <description>Recent content in Posts on Blue Moss Media</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;COPY;2018-2019</copyright>
-    <lastBuildDate>Sun, 06 Oct 2019 19:18:00 -0700</lastBuildDate>
+    <copyright>&amp;COPY;2018-2020</copyright>
+    <lastBuildDate>Tue, 04 Feb 2020 10:41:27 -0800</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Network Segmentation</title>
+      <link>/post/network-segmentation/</link>
+      <pubDate>Tue, 04 Feb 2020 10:41:27 -0800</pubDate>
+      
+      <guid>/post/network-segmentation/</guid>
+      <description>Network Segmentation Hello everyone,
+I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans.</description>
+    </item>
     
     <item>
       <title>Trueblue</title>

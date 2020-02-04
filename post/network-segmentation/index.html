@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>Network Segmentation :: Blue Moss Media — Where tech points north</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Network Segmentation Hello everyone,
+I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans."/>
+<meta name="keywords" content="Cody Moss bluemossmedia technology kubernetes docker devops raspberry pi"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/post/network-segmentation/" />
+
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Network Segmentation"/>
+<meta name="twitter:description" content="Network Segmentation Hello everyone,
+I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans."/>
+
+
+
+<meta property="og:title" content="Network Segmentation" />
+<meta property="og:description" content="Network Segmentation Hello everyone,
+I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/network-segmentation/" />
+<meta property="article:published_time" content="2020-02-04T10:41:27-08:00" />
+<meta property="article:modified_time" content="2020-02-04T10:41:27-08:00" /><meta property="og:site_name" content="Blue Moss Media" />
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">blue moss media</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="https://github.com/codayblue">Github</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="https://github.com/codayblue">Github</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <div class="post">
+    <h2 class="post-title"><a href="/post/network-segmentation/">Network Segmentation</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+          2020-02-04
+        </span>
+
+        
+          
+        
+      
+
+      
+      
+    </div>
+
+    
+
+    
+      
+        <img src="/post/network-segmentation/images/internet-lights.jpg" class="post-cover" />
+      
+    
+
+    <div class="post-content">
+      <h1 id="network-segmentation">Network Segmentation</h1>
+<p>Hello everyone,</p>
+<p>I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans. Virtual Local Area Network(s). I had configured a lot of vms at this point to be on a vlan that it was designated to go into but it raised a question to me. Why would you put something in a vlan. Segmenting it away from everything else.</p>
+<p>Up until this time I have only ever worked in one network. In AWS it was a vpc (Virtual Private Cloud), my home network whatever the router came setup with. I had never worked in a network that had more than one network. I remember in college setting up a few vlans for my CCNA course but that was about all the exposure I had with vlans. Now segmenting a network might not just be a vlan or a vpc it can be a router configured to be another network and then routed through a top router connected to the internet. I have never touched something like that and seems little more complicated. That was scheduled to be the 2nd or 3rd CCNA course but I never got that far. Anyway back to the important bits. So at work I kept hearing about vlans and setting up vms to live in them.</p>
+<p>I was wondering what is the importance of segmenting via a vlan so I began to research as I do when I have questions. I came across many reasons but the big one I see is limiting the damage a hacker can do. Other reasons also include organizing your network layout. Vlans are different virtual networks. The router looks for tagged packets and puts them in the correct virtual interface and lets them communicate with anything else in the same vlan. Vlans can also go out to other networks if nothing limits them. This is where the power comes in. You can put a firewall between these virtual interfaces and then traffic can only flow to certain nodes, ports, or range of both in another network (vlan or not). So with a firewall and vlan combo you can easily limit where a hacker can go after getting into your system. Now this is not fool proof. If your firewall has configuration to allow from that network to another network the attacker might pivot through there. Also if they get into the router than there is nothing you can do to limit them unless it is that router behind router thing. Even then most people share creds between machines so that is probably not a great protection anyway. With that being said lets move on to the implementation.</p>
+<h2 id="figuring-it-out">Figuring it out</h2>
+<p>How I figured all this out was not just internet research. If that was the case this post would be very short and boring. I had to experiment. If I just read papers on a topic how do I know it is true if I don&rsquo;t see it working. I also had other reasons why I wanted a working example. Like I have been wanting to host a minecraft or terraria server but I don&rsquo;t want to expose a server to the internet that could get pwned (hacked) and then allow the attacker to pivot through my network to my personal information. So I wanted to segment my home lab stuff away from everything else so I can expose just my home lab. If that gets owned the worst they can do is annoy me that I have to reset everything and put all my services back after I am done of course after I unplug my router and kill the service(s) they got in through. Then I can work on patching those and getting back up and running. So how I achieved this was having a fancy router.</p>
+
+  <img src="images/virtual-interface.png"  alt="virtual interfaces"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Mostly kidding, a lot of consumer routers come with built in support for vlans. If your router does not support vlans than you can look into flashing your router to something like DD-WRT to get all the features you could ever possibly want. The router I have costs around $60 USD. It is the edge router x. Now this router does not come with wifi so you will need to grab a wireless access point to connect to it via wifi. I recommend the Ubiquity AP AC lite. That is what I got and I get pretty good range out it and if you get more than one they support meshing (More on this in later post). Although the down side is I could not get the AP to go on to a vlan (probably missing a config somewhere, I am human) so I left it on the already setup 192.168.1.0/24 that the network setup wizard creates. The last bit of it that I needed was an unmanaged switch. These can be tricky to setup but google and youtube can probably get you going. Once it is up and connected to the network it will allow you to config the vlan to each port.</p>
+
+  <img src="images/DHCP-service.png"  alt="DHCP Service"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>Now these steps are vague because every router is different. You will need to lookup how to do each part on your router but the premise stays the same. I went on to the router and had it create a virtual interface on my switch0 interface because that is what all the ports except port eth0 was going to. The interface eth0 is my wan port and goes out to the internet. I told the new virtual interface to be a 10.10.0.0/16 address range. This is a huge network, although my homelab tends to run a lot of services so being able to spread them out is pretty cool. I went to the services tab and made a DHCP pool starting from 10.10.2.5 through to 10.10.2.250 for that vlan interface and I attached the DHCP service to the same interface. I also took this time to expand my other DHCP pool to pretty much the whole 192.168.1.0/24. After all this I then went to the switch to configure it to tag packets.</p>
+
+  <img src="images/vlan-switch-pt1.png"  alt="switch vlan config"  class="center"  style="border-radius: 8px;"  />
+
+
+
+  <img src="images/vlan-switch-pt2.png"  alt="switch vlan config assigning ID"  class="center"  style="border-radius: 0 0 8px 8px;"  />
+
+
+<p>The switch is where my packets are going to be tagged before they get sent to router so they end up going to the correct interface. First I configured port 1 to be my tagged port, I have heard this get called the trunk port on youtube videos so that is probably the official term but I could be wrong please feel free to correct me in the comments. After that I made ports 3 through to the last one which is 8 an untagged port. This means anything coming to that port will be untagged but then get tagged when it goes through port 1 to the router. My switch is a TP Link 8 port unmanaged switch. The interface was a little weird but after some playing around I got it working.</p>
+<p>I connected my first server to port 3 and turned it on. I saw it come up and in the routers DHCP leases I saw it get an ip. Side note before I started this process I made sure I configured everything to DHCP so I could see them get an ip assigned and go fix it with a static ip later. End side note. I was able to ssh to the box and then correct it to a static ip that I was happy with. I repeated this for each server until they were all configured. Once that was done I started testing to see what they could see and yep it was pretty much still a flat network. I could ping and connect to all the computers including my nas which was port 1 on the switch that I purposely left out of the vlan.</p>
+<p>I went back to the router and configured the firewall to have a default policy that anything on the lab network was accepted. This was done so the boxes on the lab network could reach out to the internet and I would not have to say all the ranges of the internet was traffic allowed out. I made the second rule to drop everything if the ip matched a 192.168.1.0/24 range. This made it so the boxes on the lab network could not reach out. Although this also blocked me from getting back requests. So I made another rule that allowed established connects to come through so if I made a web request from my lan to lab I would get the response back but my lab network still could not start the connection so this is working exactly how I wanted it. I got lucky the way the ruleset plays out with how I configured it. If you are not as lucky make sure the first rule is the established connection allowed to come back. Then the blocking connection to Lan IP Range comes last.</p>
+<h2 id="put-a-bow-on-it">Put a bow on it</h2>
+<p>All and all I have learned that networking is not as complicated as I thought. I mean it can get complicated fairly quick but if you understand what is happening under the hood it helps a lot. If anyone wants a proper tutorial rather than a ramblings of how I set it up let me know and I can make a post that is more tutorial than blog post. This lab setup needed to happen because the docker repo requires TLS certs (unless I wanna configure all the boxes to not be secure). I am trying to keep my homelab shenanigans cheap. So if I can setup something for free I&rsquo;ll try to make it happen. The next part that I wanna setup is lets encrypt so I can start getting some free certs. Now this can be done through dns challenges so I might not need an outside connection but considering my dns for my domain is outside my network internal domains might seem silly in the public facing DNS. So I might have to setup a tunnel between an internet node on something like Linode, and my homelab so that certbot can function.</p>
+<p>Thanks for reading! have a great year!</p>
+<h2 id="notes">Notes</h2>
+<p>Cover Image Artist: <a href="https://www.pexels.com/@pixabay">pixabay</a></p>
+<p>Cover Image: <a href="https://www.pexels.com/photo/abstract-art-blur-bright-373543/">https://www.pexels.com/photo/abstract-art-blur-bright-373543/</a></p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="/post/trueblue/">
+                  <span class="button__text">Trueblue</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+      
+        
+      
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">&COPY;2018-2020</div>
+    
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
