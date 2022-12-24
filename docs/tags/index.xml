@@ -2,10 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blue Moss Media</title>
+    
+    
+    
     <link>/tags/</link>
     <description>Recent content in Tags on Blue Moss Media</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;COPY;2018-2020</copyright><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;COPY;2018-2020</copyright>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

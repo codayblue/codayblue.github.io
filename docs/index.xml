@@ -2,19 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blue Moss Media</title>
+    
+    
+    
     <link>/</link>
     <description>Recent content on Blue Moss Media</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;COPY;2018-2020</copyright>
-    <lastBuildDate>Thu, 31 Dec 2020 09:43:59 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 09:43:59 -0500</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Reaction to Javascript Classes</title>
       <link>/post/reaction-to-javascript-classes/</link>
       <pubDate>Thu, 31 Dec 2020 09:43:59 -0500</pubDate>
       
       <guid>/post/reaction-to-javascript-classes/</guid>
-      <description>My journey to using react again I am going to start off with this is 100% an opinion piece. If someone sends you this blog post and trys to say you are doing it wrong they are not reading this content correctly. Keep doing what you feel is right. There is a million ways to solve problems and my way is just one of many. Now with that out of the way.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          My journey to using react again # I am going to start off with this is 100% an opinion piece. If someone sends you this blog post and trys to say you are doing it wrong they are not reading this content correctly. Keep doing what you feel is right. There is a million ways to solve problems and my way is just one of many. Now with that out of the way.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -23,7 +41,18 @@
       <pubDate>Fri, 06 Nov 2020 21:41:09 -0800</pubDate>
       
       <guid>/post/i-have-changed/</guid>
-      <description>This year I changed a lot and I have noticed it. Like when I was a teen I learned to program because I wanted to be a hacker like from the movies. Well turns out a life of crime, it looking nothing like the movies, and also not having anything to do with hacking turned me away from criminal part. Although knowing how to program does not make someone a tinker either.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          This year I changed a lot and I have noticed it. Like when I was a teen I learned to program because I wanted to be a hacker like from the movies. Well turns out a life of crime, it looking nothing like the movies, and also not having anything to do with hacking turned me away from criminal part. Although knowing how to program does not make someone a tinker either.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -32,8 +61,18 @@
       <pubDate>Tue, 04 Feb 2020 10:41:27 -0800</pubDate>
       
       <guid>/post/network-segmentation/</guid>
-      <description>Network Segmentation Hello everyone,
-I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans.</description>
+      <description>
+        
+          &lt;img src=&#34;/post/network-segmentation/images/internet-lights.jpg&#34;/&gt;
+          
+        
+        
+        
+          Network Segmentation # Hello everyone,
+I went on another digital adventure that I would like to share with you all. The adventure I went on was to segment my network. If you follow me on twitter you will know I switched to a DevOps career path back in September. I have learned a lot in the few months that I have worked in the DevOps field. One of the things though that Corporate IT keeps bringing up is vlans.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -42,7 +81,17 @@ I went on another digital adventure that I would like to share with you all. The
       <pubDate>Sun, 06 Oct 2019 19:18:00 -0700</pubDate>
       
       <guid>/post/trueblue/</guid>
-      <description>Trueblue project Good day internet! So I am going to tell you a story about my NAS (Network Attached Storage) project. I have named the NAS Trueblue. Mostly because I am known as codayblue on the internet My wife is Stephiy Blue for a lot of things as well, so Trueblue seems to fit the family tech naming. Any way I am getting off topic as I some times do (Wife would probably say most of the time).</description>
+      <description>
+        
+          &lt;img src=&#34;/post/trueblue/images/trueblue-nas.jpg&#34;/&gt;
+          
+        
+        
+        
+          Trueblue project # Good day internet! So I am going to tell you a story about my NAS (Network Attached Storage) project. I have named the NAS Trueblue. Mostly because I am known as codayblue on the internet My wife is Stephiy Blue for a lot of things as well, so Trueblue seems to fit the family tech naming. Any way I am getting off topic as I some times do (Wife would probably say most of the time).
+          
+        
+        </description>
     </item>
     
     <item>
@@ -51,7 +100,17 @@ I went on another digital adventure that I would like to share with you all. The
       <pubDate>Wed, 25 Sep 2019 21:20:36 -0700</pubDate>
       
       <guid>/post/the-cluster/</guid>
-      <description>So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a data center available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know.</description>
+      <description>
+        
+          &lt;img src=&#34;/post/the-cluster/images/before_build.jpg&#34;/&gt;
+          
+        
+        
+        
+          So one morning I woke up and went on to the internet and was looking at prices for cloud computing for a project I was getting ready start. Cloud computing has gotten super cheap over the years and it has made the power of a data center available to so many people. Then I got to thinking, what would it take for me to build a cloud in my home. Crazy I know.
+          
+        
+        </description>
     </item>
     
     <item>
@@ -60,7 +119,18 @@ I went on another digital adventure that I would like to share with you all. The
       <pubDate>Wed, 25 Sep 2019 20:55:41 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>Hello my name is Cody Moss. I am a software engineer turned devops that is located in Las Vegas, NV. I am married for 7 years to my beatuiful wife Stephiy Moss. We have two fur babies named Jeff and Penny. I have way to many hobbies to list so I will just rattle off a few. Kuberenetes, Docker, Automation, Development, PHP Vegas co-organizer. blah blah blah enough about me.</description>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Hello my name is Cody Moss. I am a software engineer turned devops that is located in Las Vegas, NV. I am married for 7 years to my beatuiful wife Stephiy Moss. We have two fur babies named Jeff and Penny. I have way to many hobbies to list so I will just rattle off a few. Kuberenetes, Docker, Automation, Development, PHP Vegas co-organizer. blah blah blah enough about me.
+          
+        
+        </description>
     </item>
     
   </channel>
