@@ -45,6 +45,10 @@ disqusShortname = "bluemossmedia"
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
+        identifier = "presentations"
+        name = "Presentations"
+        url = "/presentations/"
+      [[languages.en.menu.main]]
         identifier = "github"
         name = "Github"
         url = "https://github.com/codayblue"
